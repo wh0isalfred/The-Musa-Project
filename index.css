@@ -1,0 +1,532 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2c2c2c;
+  background-color: #f9f6ef; /* cream background */
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #5a2a1e; /* deep brown */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  z-index: 1000;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f4c542; /* gold */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #f9f6ef;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f4c542;
+}
+
+.btn-nav {
+  background-color: #d97706; /* Accent from your palette */
+  color: #fff !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-nav:hover {
+  background-color: #b45309;
+  transform: scale(1.05);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE STYLING */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; right: 20px;
+    background: #5a2a1e;;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    color: #d97706;
+    display: block;
+  }
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding-top: 0 1rem;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.hero-content {
+  background: rgba(91, 42, 30, 0.65); /* transparent brown overlay */
+  padding: 2rem;
+  border-radius: 10px;
+  color: #f9f6ef;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-content h2 span {
+  color: #f4c542;
+}
+
+.tagline {
+  font-size: 1rem;
+  background: #f4c542;
+  color: #5a2a1e;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.countdown div {
+  background: #6b2d1f;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4c542;
+}
+
+.countdown p {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: #f9f6ef;
+  text-transform: uppercase;
+}
+
+/* Festival Dates */
+.festival-dates {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;   /* bigger */
+  font-weight: 700;    /* bold */
+  color: #ffffff;      /* accent gold */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* adds impact */
+  margin-bottom: 1rem;
+}
+.d-slash{
+    color: #f4c542;
+    font-weight: 9000;
+}
+
+
+/* About Section */
+.about {
+  background: #F4E2C6; /* light gray */
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about p {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+}
+
+.about span {
+  color: #5a2a1e;
+  font-weight: bold;
+}
+
+/* Button */
+.cta-button {
+  background: linear-gradient(135deg,  #f4c542,  #ffc527); /* rich golden yellow */
+  color: #4B0082; /* deep royal purple text for contrast */
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect */
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-25deg);
+}
+
+/* Hover – glowing + lift */
+.cta-button:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 195, 0, 0.6);
+}
+
+/* Shine streak */
+.cta-button:hover::after {
+  animation: shine 1s forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* Click feedback */
+.cta-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* Experience Content Section */
+.experience {
+  margin: 0;
+  margin-top: 4rem;  /* keep only if you want spacing *above* */
+  padding: 2rem 0;   /* only top/bottom padding */
+  text-align: center;
+  background: linear-gradient(135deg, #6A3E2B, #5A2A83);
+  color: #f7f2e7;
+  width: 100%;
+}
+
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #f7f2e7;
+  line-height: 1.3;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: #F7F2E7;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-8px);
+}
+
+.experience-item img {
+  width: 100%;
+  height: 300px; /* tall like a phone screen */
+  object-fit: cover;
+}
+
+.experience-item p {
+  padding: 0.5rem;
+  font-size: 1.05rem;
+  color: #1e1b18;
+  line-height: 1.0;
+}
+
+
+/*Caravan Section */
+.caravan-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #F4E2C6;
+}
+
+/* Caravan Rules Box */
+.caravan-rules {
+  flex: 1 1 45%;
+  background: #F7F2E7;
+  padding: 2rem;
+  border-radius: 20px; /* moderately rounded corners */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border: 3px solid #f4c542;
+}
+
+.caravan-rules h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #5a2a1e;
+}
+
+.caravan-rules ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.caravan-rules ul li {
+  position: relative;  /* makes ::before align correctly */
+  margin-left: 2rem;   /* space for the bullet */
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.caravan-rules ul li::before {
+  content: "✦"; /* star-like bullet */
+  color: #f4c542; /* gold */
+  position: absolute;
+  left: -1.5rem; /* places star neatly */
+  top: 0;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Festival Map */
+.caravan-map {
+  flex: 1 1 45%;
+  text-align: center;
+  background-color: #5a2a1e;
+  padding-bottom: 2rem;
+}
+
+.caravan-rules h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #5a2a1e; /* deep brown */
+  border-bottom: 2px solid #f4c542;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.caravan-map img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  margin-bottom: 1rem;
+}
+
+/* Download Buttons */
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #f4c542, #ffc527);
+  color: #4B0082;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6);
+}
+
+
+/* Pre-Footer */
+.pre-footer {
+  background: #f7f3e9; /* parchment feel */
+  color: #3a2d1d;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  border-top: 7px solid #d4af37; /* regal gold strip */
+}
+
+.pre-footer strong {
+  color: #6a1b9a; /* royal purple highlight */
+}
+
+/* Main Footer */
+.main-footer {
+  background: #5a2a1e;
+  padding: 3rem 1.5rem 1rem;
+  color: #ffffff;
+}
+
+.main-footer p{
+    color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-footer h3, .main-footer h4 {
+  color: #f4c542; /* gold accent */
+}
+
+.footer-links ul, .footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Only add stars to normal text links in the footer */
+.footer-links li:not(:last-child)::before {
+  content: "✦"; /* star-like bullet */
+  color: #ffffff; /* gold */
+  position: absolute;
+  left: -1.5rem; /* places star neatly */
+  top: 0;
+  font-size: 1.2rem;
+}  
+
+.footer-links ul li, .footer-socials ul li {
+position: relative;  /* makes ::before align correctly */
+  margin-left: 2rem;   /* space for the bullet */
+  margin-bottom: 0.5rem;
+}
+
+
+.footer-links ul li a, .footer-socials ul li a {
+  color: #ffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover, .footer-socials ul li a:hover {
+  color: #f4c542;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+
+/* Sponsor Bar */
+.sponsors {
+  background: #fff;
+  padding: 1.5rem 0;
+  border-top: 3px solid #d4af37; /* gold accent */
+}
+
+.sponsor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-container img {
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.sponsor-container img:hover {
+  opacity: 1;
+}
