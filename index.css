@@ -23,11 +23,12 @@ body {
   position: relative;
 }
 
-.logo {
+.logo a{
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #f4c542; /* gold */
+  text-decoration: none;
 }
 
 .nav-links {

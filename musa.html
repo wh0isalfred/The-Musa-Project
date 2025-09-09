@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Musa Project | Mali Empire Festival</title>
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="musa.css">
+</head>
+<body class="musa-page">
+
+  <!-- NAV -->
+ <nav class="navbar">
+    <div class="logo"><a href="index.html">Mali Empire Festival</a></div>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="musa.html">The Musa Project</a></li>
+      <li><a href="#">Royal Court</a></li>
+      <li><a href="#">The Golden Route</a></li>
+      <li><a href="#">Royal Feast</a></li>
+      <li><a href="#">Dress Like Royalty</a></li>
+      <li><a href="#" class="btn-nav">Secure Your Spot</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO: split layout (text left / artwork right) -->
+  <header class="musa-hero" role="banner" aria-label="The Musa Project introduction">
+    <div class="hero-left">
+      <h1>Welcome to <span class="highlight">The Musa Project</span></h1>
+      <p class="lead">
+        Reawakening the golden age of the Mali Empire — scholarship, trade, art and ceremony reimagined for today.
+        Walk the storied streets of Timbuktu, hear the griots sing, and experience living traditions shaped by centuries.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="golden-route.html#vendor-section" class="cta-button">Vendor & Market Info</a>
+        <a href="tickets.html" class="secondary-btn">Secure Your Spot</a>
+      </div>
+
+      <ul class="hero-stats">
+        <li><strong>100+</strong><span>Performances</span></li>
+        <li><strong>120</strong><span>Artisans</span></li>
+        <li><strong>25</strong><span>Workshops</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-right" aria-hidden="false">
+      <!-- replace with your illustration/photo -->
+      <img src="Media/Images/Musa-wp.PNG" alt="Illustration: Mansa Musa / Timbuktu" />
+      <!-- subtle patterned divider -->
+      <svg class="pattern-divider" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <pattern id="tri" width="6" height="6" patternUnits="userSpaceOnUse">
+            <path d="M0 6 L3 0 L6 6 Z" fill="rgba(244,197,66,0.12)"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#tri)"/>
+      </svg>
+    </div>
+  </header>
+
+  <main id="content" tabindex="-1">
+
+    <!-- SPLIT: History (left) + Mission (right) -->
+    <section class="split-block">
+      <article class="split-left">
+        <h2>History in Focus</h2>
+        <p>
+          The Mali Empire rose under Sundiata Keita and blossomed through the reign of Mansa Musa, whose
+          pilgrimage and patronage of learning placed Timbuktu on the world map. Manuscript libraries, trade
+          caravans, and a network of scholarship shaped a civilization whose legacy we celebrate.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Founded</dt><dd>c. 1235</dd></div>
+          <div><dt>Golden Era</dt><dd>14th century (Mansa Musa)</dd></div>
+          <div><dt>Centers</dt><dd>Timbuktu · Gao · Walata</dd></div>
+        </dl>
+      </article>
+
+      <aside class="split-right">
+        <h3>Our Vision</h3>
+        <p>
+          The Musa Project uses festivals, education and community programs to reconnect people with
+          West Africa’s intellectual, artistic, and commercial heritage — providing a platform for
+          artisans, researchers and young leaders.
+        </p>
+        <div class="callout">
+          <h4>Education & Research</h4>
+          <p>Scholar residencies and archival digitization partnerships highlight Timbuktu’s manuscripts and Africa’s intellectual history.</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- TIMELINE (horizontal scroll) -->
+    <section class="timeline-section" aria-labelledby="timeline-title">
+      <div class="section-head">
+        <h2 id="timeline-title">A Brief Timeline</h2>
+        <p class="muted">Drag or use arrows to scroll through major milestones.</p>
+      </div>
+
+      <div class="timeline-wrap">
+        <button class="timeline-nav left" aria-label="Scroll timeline left">&larr;</button>
+
+        <div class="timeline" role="list">
+          <div class="timeline-item" role="listitem">
+            <time>c. 1200</time>
+            <h4>Proto-States</h4>
+            <p>Emerging kingdoms on the Niger Bend consolidate influence.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <time>1235</time>
+            <h4>Sundiata Keita</h4>
+            <p>Unites Mande peoples and establishes the Mali dynasty.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <time>14th c.</time>
+            <h4>Mansa Musa</h4>
+            <p>Famed pilgrimage to Mecca and patronage of scholarship in Timbuktu.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <time>15th–16th c.</time>
+            <h4>Scholastic Traditions</h4>
+            <p>Universities and manuscript culture flourish across the region.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <time>Modern</time>
+            <h4>The Musa Project</h4>
+            <p>Revives and reinterprets Mali’s heritage through festival and research.</p>
+          </div>
+        </div>
+
+        <button class="timeline-nav right" aria-label="Scroll timeline right">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- LIVING TRADITIONS: alternating layout -->
+    <section class="alternating">
+      <div class="alt-row">
+        <div class="alt-img"><img src="Media/Images/griot.png" alt="Griot performance"></div>
+        <div class="alt-text">
+          <h3>Griots & Oral Memory</h3>
+          <p>Griots — the living libraries — keep histories and genealogies alive, blending song, poetry and counsel.</p>
+        </div>
+      </div>
+
+      <div class="alt-row reverse">
+        <div class="alt-img"><img src="Media/Images/pattern.png" alt="Weavers and textile artisans"></div>
+        <div class="alt-text">
+          <h3>Weaving & Textiles</h3>
+          <p>Indigo dyeing, narrow-loom weaving and pattern languages form a visual vocabulary of identity and place.</p>
+        </div>
+      </div>
+
+      <div class="alt-row">
+        <div class="alt-img"><img src="Media/Images/manuscript.jpg" alt="Ancient manuscript"></div>
+        <div class="alt-text">
+          <h3>Manuscripts & Learning</h3>
+          <p>Preserved manuscripts tell the story of literacy, law and science — which we interpret and present through exhibitions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOLARS / LIBRARY CARD STRIP -->
+    <section class="library">
+      <h2>Scholar's Library</h2>
+      <div class="library-grid">
+        <article class="lib-card">
+          <h4>Timbuktu Manuscripts</h4>
+          <p>Digitization projects and curated exhibits make fragile manuscripts accessible to modern audiences.</p>
+        </article>
+        <article class="lib-card">
+          <h4>Residencies</h4>
+          <p>Scholars in residence collaborate with local historians and hosts to create public lectures and materials.</p>
+        </article>
+        <article class="lib-card">
+          <h4>Workshops</h4>
+          <p>Public workshops on paleography, conservation and Mahgreb/Sahel trade histories.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS CAROUSEL -->
+    <section class="testimonials" aria-label="Visitor Testimonials">
+      <h2>Voices from the Caravan</h2>
+      <div class="test-wrap">
+        <button class="test-nav prev" aria-label="Previous testimonial">&lsaquo;</button>
+
+        <div class="test-slider" aria-live="polite">
+          <blockquote class="test-slide">
+            <p>“An unforgettable journey — music, color and stories that made history feel close.”</p>
+            <cite>— Ama, Lagos</cite>
+          </blockquote>
+
+          <blockquote class="test-slide">
+            <p>“I learned more about the region’s trading networks in an afternoon than I had in months of reading.”</p>
+            <cite>— Dr. K. Seydou</cite>
+          </blockquote>
+
+          <blockquote class="test-slide">
+            <p>“The festival brought artisans and scholars together in a way I haven’t seen elsewhere.”</p>
+            <cite>— Lina, Cultural Curator</cite>
+          </blockquote>
+        </div>
+
+        <button class="test-nav next" aria-label="Next testimonial">&rsaquo;</button>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section class="get-involved">
+      <h2>Get Involved</h2>
+      <div class="involved-grid">
+        <div class="involved-card">
+          <h3>Volunteer</h3>
+          <p>Support the festival on-site: wayfinding, archives assistance, visitor welcome teams.</p>
+          <a href="#" class="download-btn">Apply to Volunteer</a>
+        </div>
+
+        <div class="involved-card">
+          <h3>Partner / Sponsor</h3>
+          <p>Partner with The Musa Project to support exhibitions, education and community programming.</p>
+          <a href="#" class="download-btn">Partner With Us</a>
+        </div>
+
+        <div class="involved-card">
+          <h3>Vendors & Artisans</h3>
+          <p>Sell work in the Market of Empires. (Full vendor process in <a href="golden-route.html">The Golden Route</a>.)</p>
+          <a href="golden-route.html#vendor-section" class="cta-button">Vendor Info</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+      <!-- Pre-Footer -->
+<section class="pre-footer">
+  <div class="container">
+    <p>
+      The Musa Project is more than a festival it’s a living tribute to the legacy of the Mali Empire and the golden age of West Africa. 
+      Through storytelling, traditional music, fashion, food, and architecture, we bring history to life and reconnect communities with the greatness 
+      that once defined an empire. From the epic of Sundiata to the rhythm of the drums and the spices of the royal feast, 
+      every detail is crafted to honor our roots and inspire a new generation. 
+      <strong>Join the journey. Remember the empire. Celebrate the spirit.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>The Musa Project</h3>
+      <p>Reconnecting communities with the golden age of West Africa.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Mali Empire Festival</a></li>
+        <li><a href="musa.html">The MUSA Project</a></li>
+        <li><a href="#">Royal Court</a></li>
+        <li><a href="#">The Golden Route</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Royal Feast</a></li>
+        <li><a href="#">Dress Like Royalty</a></li>
+        <li><a href="#" class="btn-nav">Secure Your Spot</a></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+    <h4>Connect</h4>
+    <ul>
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Musa Project. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Sponsor Bar -->
+<section class="sponsors">
+  <div class="sponsor-container">
+    <img src="sponsor1.png" alt="Sponsor 1">
+    <img src="sponsor2.png" alt="Sponsor 2">
+    <img src="sponsor3.png" alt="Sponsor 3">
+    <img src="sponsor4.png" alt="Sponsor 4">
+  </div>
+</section>
+
+
+  <!-- Page script -->
+  <script src="musa.js"></script>
+</body>
+</html>
